@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sahana Ganesh Siddoji | AI & Engineering Portfolio</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo" onclick="switchSlide('home')">Sahana<span>.</span></div>
+        
+        <ul class="nav-links">
+            <li><div class="nav-link active" onclick="switchSlide('home')">Home</div></li>
+            <li><div class="nav-link" onclick="switchSlide('education')">Education</div></li>
+            <li><div class="nav-link" onclick="switchSlide('skills')">Skills</div></li>
+            <li><div class="nav-link" onclick="switchSlide('internship')">Internship</div></li>
+            <li><div class="nav-link" onclick="switchSlide('achievements')">Achievements</div></li>
+            <li><div class="nav-link" onclick="switchSlide('projects')">Projects</div></li>
+            <li><div class="nav-link" onclick="switchSlide('certificates')">Certificates</div></li>
+            <li><div class="nav-link" onclick="switchSlide('contact')">Contact</div></li>
+            
+            <!-- Theme Toggle Button -->
+            <li>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Slide Container -->
+    <div id="main-container">
+
+        <!-- SLIDE 1: HOME -->
+        <div id="home" class="slide active">
+            <div class="slide-content">
+                <!-- Flowers -->
+                <i class="fas fa-spa flower-decor flower-1" style="--r: -15deg;"></i>
+                <i class="fas fa-leaf flower-decor flower-2" style="--r: 15deg;"></i>
+                <i class="fas fa-clover flower-decor flower-3" style="--r: -10deg;"></i>
+                <i class="fas fa-seedling flower-decor flower-4" style="--r: 20deg;"></i>
+                <i class="fas fa-fan flower-decor flower-5" style="--r: -5deg;"></i>
+                <i class="fas fa-spa flower-decor flower-6" style="--r: 10deg;"></i>
+                <i class="fas fa-leaf flower-decor flower-7" style="--r: -30deg;"></i>
+                <i class="fas fa-clover flower-decor flower-8" style="--r: 5deg;"></i>
+
+                <div class="hero-container">
+                    <div class="hero-content animate-up">
+                        <p class="hero-greeting">Hello, I'm</p>
+                        <h1 class="hero-name">Sahana Ganesh <br>Siddoji</h1>
+                        <!-- Typewriter Effect Target -->
+                        <h3 class="hero-role"><span id="typewriter"></span><span class="cursor">&nbsp;</span></h3>
+                        <p class="hero-bio">
+                            Passionate about coding, AI, and building impactful software solutions. 
+                            Skilled in Java, SQL, and modern web technologies. 
+                            Merging creativity with logic.
+                        </p>
+                        <div class="hero-btns">
+                            <a href="./internship/resumesahana.pdf" class="btn btn-primary"><i class="fas fa-file-alt"></i> Resume</a>
+                            <a href="http://www.linkedin.com/in/sahana-ganesh-siddoji-912a2436b" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/sahana20019" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="hero-img-wrapper animate-up delay-1">
+                        <!-- Ensure this image exists in your folder structure -->
+                        <img src="./photo/WhatsApp Image 2026-03-04 at 8.16.59 AM.jpeg" alt="Sahana" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: EDUCATION -->
+        <div id="education" class="slide">
+            <div class="slide-content">
+                <h2 class="section-title animate-up">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item left animate-up delay-1">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Present</span>
+                            <h3 class="timeline-title">B.E. in Computer Science</h3>
+                            <h4 class="timeline-subtitle">Adichunchanagiri Institute of Technology</h4>
+                            <p style="color: var(--text-light); margin-top: 10px;">CGPA: <strong>8.99</strong></p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right animate-up delay-2">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Completed</span>
+                            <h3 class="timeline-title">Schooling</h3>
+                            <h4 class="timeline-subtitle">Jawahar Navodaya Vidyalaya, Uttara KAnnada</h4>
+                            <p style="color: var(--text-light); margin-top: 10px;">10th: <strong>87%</strong> | 12th: <strong>89%</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: SKILLS -->
+        <div id="skills" class="slide">
+            <div class="ai-bg"></div>
+            <div class="slide-content">
+                <h2 class="section-title animate-up">My Skills</h2>
+                <div class="grid-container">
+                    <div class="card tilt-card animate-up delay-1">
+                        <div class="card-content">
+                            <h3><i class="fas fa-code"></i> Languages</h3>
+                            <ul class="skill-list">
+                                <li>Java</li>
+                                <li>SQL</li>
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="card tilt-card animate-up delay-2">
+                        <div class="card-content">
+                            <h3><i class="fas fa-brain"></i> Core</h3>
+                            <ul class="skill-list">
+                                <li>Object-Oriented Programming (OOP)</li>
+                                <li>Data Structures & Algorithms</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card tilt-card animate-up delay-3">
+                        <div class="card-content">
+                            <h3><i class="fas fa-database"></i> Data & DB</h3>
+                            <ul class="skill-list">
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card tilt-card animate-up delay-4">
+                        <div class="card-content">
+                            <h3><i class="fas fa-tools"></i> Tools</h3>
+                            <ul class="skill-list">
+                                <li>Git</li>
+                                <li>VS Code</li>
+                                <li>Spring Boot</li>
+                                <li>AWS</li>
+                                <li>Jupyter Notebook</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: INTERNSHIP -->
+        <div id="internship" class="slide">
+            <div class="slide-content">
+                <h2 class="section-title animate-up">Internship</h2>
+                <div class="timeline">
+                    <div class="timeline-item left animate-up delay-1">
+                        <div class="timeline-content">
+                            <span class="timeline-date">July 2025 - Aug 2025</span>
+                            <h3 class="timeline-title">Web Development Intern</h3>
+                            <h4 class="timeline-subtitle">ApexPlanet Software Pvt. Ltd.</h4>
+                            <p style="color: var(--text-light); margin-top: 10px;">Gained hands-on experience in full-stack web development, working on dynamic user interfaces and server-side logic.</p>
+                            <a href="./internship/Certificate_of_Internship_APSPL2511169.pdf" class="cert-link" target="_blank" style="margin-top: 15px; display: inline-block;">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: ACHIEVEMENTS -->
+        <div id="achievements" class="slide">
+            <div class="slide-content">
+                <h2 class="section-title animate-up">Achievements</h2>
+                <div class="timeline animate-up delay-1">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Hackathon Winner</h3>
+                            <p class="timeline-subtitle">SIH Internal Hackathon - 1st Runner Up</p>
+                            <p style="color: var(--text-light); margin-top: 15px; line-height: 1.6;">
+                                Built a multilingual telemedicine platform with video/audio consultations, AI symptom checker, and IoT-based health monitoring. Enabled low-bandwidth and offline access, improving healthcare reach across 173 villages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 6: PROJECTS -->
+        <div id="projects" class="slide">
+            <div class="ai-bg"></div>
+            <div class="slide-content">
+                <h2 class="section-title animate-up">Featured Projects</h2>
+                <div class="grid-container">
+                    <div class="card project-card tilt-card animate-up delay-1">
+                        <div class="project-header"><i class="fas fa-robot project-icon"></i></div>
+                        <div class="project-body">
+                            <h3 class="timeline-title">AI in Daily Life</h3>
+                            <p class="project-desc">A futuristic, interactive website showcasing the impact of AI in daily life with modern UI/UX.</p>
+                            <p class="project-tech">HTML • CSS • JavaScript</p>
+                            <a href="https://github.com/sahana20019/AI-in-Daily-Life.git" target="_blank" class="btn btn-outline" style="margin:0; padding: 10px 25px; font-size: 0.9rem; width: fit-content;">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card project-card tilt-card animate-up delay-2">
+                        <div class="project-header"><i class="fas fa-university project-icon"></i></div>
+                        <div class="project-body">
+                            <h3 class="timeline-title">University Mgmt System</h3>
+                            <p class="project-desc">Comprehensive desktop application for administrative tasks, student enrollment, and grade tracking.</p>
+                            <p class="project-tech">Java • JavaFX • JDBC • SQL</p>
+                            <button class="btn btn-outline" style="margin:0; padding: 10px 25px; font-size: 0.9rem; width: fit-content;">Demo</button>
+                        </div>
+                    </div>
+                    <div class="card project-card tilt-card animate-up delay-3">
+                        <div class="project-header"><i class="fas fa-dna project-icon"></i></div>
+                        <div class="project-body">
+                            <h3 class="timeline-title">Cancer Metastasis Detection</h3>
+                            <p class="project-desc">Multimodal deep learning framework combining SimCLR, GNN, and Transformer for metastasis prediction.</p>
+                            <p class="project-tech">Python • PyTorch • SimCLR</p>
+                            <span style="font-size: 0.85rem; color: #999; font-weight: 500;">Research Model</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 7: CERTIFICATES -->
+        <div id="certificates" class="slide">
+            <div class="ai-bg"></div>
+            <div class="slide-content">
+                <h2 class="section-title animate-up">Certifications</h2>
+                <div class="grid-container">
+                    <div class="card cert-card tilt-card animate-up delay-1">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h3>Python Coder</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Kaggle</p>
+                        <a href="./certificates/Python Coder.png" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="card cert-card tilt-card animate-up delay-1">
+                        <i class="fab fa-java cert-icon"></i>
+                        <h3>Programming In Java</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">NPTEL</p>
+                        <a href="./certificates/Programming In Java (1).pdf" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="card cert-card tilt-card animate-up delay-2">
+                        <i class="fas fa-cloud cert-icon"></i>
+                        <h3>Cloud Computing</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">NPTEL</p>
+                        <a href="./certificates/Cloud Computing.pdf" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="card cert-card tilt-card animate-up delay-2">
+                        <i class="fab fa-aws cert-icon"></i>
+                        <h3>AWS Cloud Architecting</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">AWS Academy</p>
+                        <a href="./certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Architecting_Badge20250726-32-i4ggxu.pdf" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="card cert-card tilt-card animate-up delay-3">
+                        <i class="fas fa-brain cert-icon"></i>
+                        <h3>AI Fundamentals</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">IBM Skills Build</p>
+                        <a href="./certificates/IBMDesign20250501-28-qrjqi4.pdf" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="card cert-card tilt-card animate-up delay-3">
+                        <i class="fas fa-chart-line cert-icon"></i>
+                        <h3>Process Mining</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Celonis Academy</p>
+                        <a href="./certificates/celonis_process_mining.pdf" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="card cert-card tilt-card animate-up delay-4">
+                        <i class="fas fa-code cert-icon"></i>
+                        <h3>Write PQL Queries</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Celonis Academy</p>
+                        <a href="./certificates/Write PQL Queries.pdf" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                    <div class="card cert-card tilt-card animate-up delay-4">
+                        <i class="fas fa-database cert-icon"></i>
+                        <h3>Get Data into Celonis</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Celonis Academy</p>
+                        <a href="./certificates/Get Data into Celonis.pdf" target="_blank" class="cert-link">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 8: CONTACT -->
+        <div id="contact" class="slide">
+            <div class="ai-bg"></div>
+            <div class="slide-content">
+                <h2 class="section-title animate-up">Get in Touch</h2>
+                <div class="contact-box animate-up delay-1">
+                    <form id="contactForm" action="https://formspree.io/f/xgvlwjrp" method="POST">
+                        <div class="form-group">
+                            <label style="display:block; margin-bottom:8px; font-weight:600; color: var(--text-dark);">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label style="display:block; margin-bottom:8px; font-weight:600; color: var(--text-dark);">Email</label>
+                            <input type="email" id="email" name="_replyto" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label style="display:block; margin-bottom:8px; font-weight:600; color: var(--text-dark);">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="global-footer">
+        <div class="footer-copyright">
+            &copy; <span id="year"></span> Sahana Ganesh Siddoji.
+        </div>
+        <div class="footer-social-links">
+            <a href="http://www.linkedin.com/in/sahana-ganesh-siddoji-912a2436b" target="_blank" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/sahana20019" target="_blank" class="footer-social-icon"><i class="fab fa-github"></i></a>
+            <a href="mailto:sahanags204@gmail.com" class="footer-social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
